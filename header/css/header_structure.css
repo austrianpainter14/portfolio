@@ -4,8 +4,7 @@
     left: 0;
     width: 100%;
     display: flex;
-    text-align: center;
-    justify-content: space-between; /* left / center / right */
+    justify-content: space-between; 
     align-items: center;
     height: 80px;
 
@@ -19,11 +18,10 @@
 /* Left and right containers */
 .left-side, .right-side {
     display: flex;
-    gap: clamp(0px, 1vw, 30px); /* min = 5px, preferred = 5vw, max = 30px */
-    flex: 1 1 auto;             /* allow shrinking */
+    gap: clamp(0px, 1vw, 30px);
+    flex: 1 1 auto;
     min-width: 0;
 }
-
 
 .right-side {
     justify-content: flex-end;  
@@ -39,31 +37,89 @@
 
 /* Center site name */
 .site-name {
-    flex: 0 1 auto;          /* shrink if needed but stay centered */
+    flex: 0 1 auto;
     font-size: clamp(25px, 5vw, 55px); 
     font-weight: bolder;
     color: wheat;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     text-align: center;
-    align-items: center;
     white-space: nowrap;
+    
 }
 
-/* Individual links */
+/* Links */
 .left-side a, .right-side a {
-    font-size: clamp(20px, 1.5vw, 40px);
+    font-size: clamp(24px, 1.5vw, 40px);
     white-space: nowrap;
     text-decoration: none;
     color: wheat;
     transition: color 0.3s, transform 0.3s;
 }
 
-
-.left-side a:hover {
-  transform: translateY(-2px);
-}
-
+.left-side a:hover,
 .right-side a:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 }
+
+/* 📱 Media query – pod 500px odkazy pod sebe */
+@media (max-width: 600px) {
+    .site-header{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+
+    .left-side,
+    .right-side {
+        
+        flex-direction: column;   /* odkazy stacked */
+        align-items: center;      /* vycentrovat */
+        gap: 6px;
+    }
+
+    .left-side a, 
+    .right-side a {
+        font-size: 24px; /* menší text na mobilech */
+    }
+
+    .site-name {
+        flex-direction: column;
+        align-items: center;
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 389px) {
+    .site-header {
+        flex-direction: column;  /* vše pod sebe */
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: auto;
+        
+    }
+
+    .site-name {
+        order: -1;          /* 👈 pošle site-name nahoru */
+        font-size: 33px;
+        margin: 8px 0;
+        
+        
+    }
+
+    .left-side,
+    .right-side {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+        padding: 2.5px 0;
+    }
+
+    .left-side a, 
+    .right-side a {
+        font-size: 22px;
+    }
+}
+

@@ -60,6 +60,15 @@
     background-color: #1f1f1f;
 }
 
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+
 /* 📱 Telefony – dvě tlačítka vedle sebe */
 @media (max-width: 480px) {
     .text-rocniky {
