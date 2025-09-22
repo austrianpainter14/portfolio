@@ -1,0 +1,35 @@
+.timeline-container {
+  width: 50%; 
+  height: 20px; 
+  background-color: #ee4e4e4b; 
+  border-radius: 20px; 
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  outline-width: 3px;
+  outline-color: wheat;
+  outline-style: solid;
+}
+
+.timeline-progress {
+  height: 100%;
+  width: 0%; /* startuje od nuly, animaci řídí JS */
+  background: linear-gradient(90deg, #F6EEC9, #A1DD70, #799351); 
+}
+
+p {
+  font-family: "Jersey 20", serif;
+  font-size: 30px;
+  font-weight: bolder;
+  color: wheat;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.count-subtitle {
+  text-align: center;
+  font-family: "Jersey 20", serif;
+  font-size: 30px;
+  font-weight: bolder;
+  color: wheat;
+  margin-top: 0px;
+}

@@ -1,0 +1,102 @@
+/* Kontejner pro ročníky */
+.rocniky {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+    font-family: "Jersey 20", sans-serif;
+}
+
+/* Nadpis */
+.text-rocniky {
+    font-size: 60px;
+    font-weight: bold;
+    color: wheat;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease; /* smooth resize */
+}
+
+/* Kontejner pro tlačítka */
+.rocniky-buttons {
+    display: flex;
+    flex-wrap: wrap;   /* 👈 umožní 2x2 layout na mobilech */
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Základní styl tlačítek */
+.rocniky-buttons button {
+    padding: 10px 40px;
+    font-family: "Jersey 20", sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: wheat;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 
+        background-color 0.3s ease, 
+        transform 0.2s ease,
+        font-size 0.3s ease,
+        padding 0.3s ease; /* 👈 smooth resize */
+}
+
+/* Hover efekt – jemný lift */
+.rocniky-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+/* Barevný hover pro jednotlivé ročníky */
+.prvak:hover { background-color: #AF3E3E; color: white; }
+.druhak:hover { background-color: #A3DC9A; color: white; }
+.tretak:hover { background-color: #555879; color: white; }
+.ctvrtak:hover { background-color: #F08787; color: white; }
+
+/* Kliknutí – tmavší barva zpět */
+.rocniky-buttons button:active {
+    transform: translateY(0);
+    background-color: #1f1f1f;
+}
+
+/* 📱 Telefony – dvě tlačítka vedle sebe */
+@media (max-width: 480px) {
+    .text-rocniky {
+        font-size: 36px;
+    }
+
+    .rocniky-buttons {
+        gap: 8px;
+    }
+
+    .rocniky-buttons button {
+        flex: 1 1 calc(50% - 8px); /* 👈 přesně 2 tlačítka na řádek */
+        font-size: 22px;
+        padding: 8px 12px;
+    }
+}
+
+/* 📲 Tablety (do 768px) */
+@media (max-width: 768px) {
+    .text-rocniky {
+        font-size: 44px;
+    }
+
+    .rocniky-buttons button {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+}
+
+/* 💻 Velký monitor */
+@media (min-width: 1200px) {
+    .text-rocniky {
+        font-size: 72px;
+    }
+
+    .rocniky-buttons button {
+        font-size: 46px;
+        padding: 14px 50px;
+    }
+}

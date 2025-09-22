@@ -1,0 +1,31 @@
+/* Only left-side and right-side links */
+.left-side a,
+.right-side a {
+    position: relative;      /* required for ::after */
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 4px;     /* space for underline */
+}
+
+/* Underline slides from center */
+.left-side a::after,
+.right-side a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;               /* start from center */
+    height: 2px;
+    width: 0;                /* initially invisible */
+    background-color: wheat;
+    transition: all 0.3s ease;
+    transform: translateX(-50%); /* center the starting point */
+}
+
+/* Animate on hover */
+.left-side a:hover::after,
+.right-side a:hover::after {
+    width: 100%;              /* full underline */
+    left: 50%;
+    transform: translateX(-50%); /* keep centered as it grows */
+}

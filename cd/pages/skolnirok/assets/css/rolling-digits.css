@@ -1,0 +1,52 @@
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "Jersey 20", sans-serif;
+    gap: 12px;
+}
+
+.digit-column {
+    width: 55px; /* standardní sloupce */
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center; /* horizontálně centrované */
+    align-items: flex-start; /* pro roll efekt */
+    background-color: transparent; /* žádné rámečky */
+}
+
+#days {
+    width: 90px; /* širší pro dny */
+}
+
+.roller {
+    display: flex;
+    flex-direction: column;
+}
+
+.roller div {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: wheat; /* nová barva textu */
+    transition: transform 0.5s ease-in-out;
+
+}
+
+/* upravené ":" aby bylo přesně centrované */
+.colon {
+    width: 20px;                  /* šířka dvojtečky */
+    display: flex;
+    justify-content: center;      /* horizontální centrování */
+    align-items: center;          /* vertikální centrování */
+    font-size: 45px;
+    line-height: 70px;            /* musí odpovídat výšce digit sloupce */
+    color: wheat;
+    padding-bottom: 5px;
+}
+
