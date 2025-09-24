@@ -85,7 +85,7 @@
 .mobile-links.open .mobile-links-inner a:nth-child(6) { 
     opacity:1; 
     transform: translateX(0); 
-    transition-delay: 0.40s; 
+    transition-delay: 0.4s; 
 }
 
 
