@@ -4,7 +4,7 @@ body {
     width: 100%;
     margin: 0;
     font-family: "Jersey 20", serif;
-    background: url("./header/assets/images/Background.jpg") no-repeat center center;
+    background: url("./header/assets/images/Background.jpg") center center;
     -webkit-tap-highlight-color: transparent;
     
 }

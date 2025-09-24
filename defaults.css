@@ -18,7 +18,7 @@
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 
     font-family: "Jersey 20", serif;
-    font-size: 55px; 
+    font-size: clamp(45px, 0vw, 55px); 
     font-weight: bolder;
     color: wheat;
 }

@@ -3,24 +3,28 @@
    ========================== */
 /* Container handles sliding, not clickable area */
 .mobile-links {
+    display: flex;
     position: fixed;
     top: 85px;               /* below header */
     left: 0;                
     height: calc(100vh - 85px);
     width: 100%;
-    background: rgba(34,34,34,0.13);
+    background: rgba(0, 0, 0, 0.219);
     backdrop-filter: blur(0);
     z-index: 1000;
-    display: flex;
+    
     justify-content: flex-start;
     align-items: flex-start;
 
     /* Start hidden by translating X */
-    transform: translateX(-100%);
+
+    transform: translateX(-120%);
     transition: transform 0.4s ease, backdrop-filter 0.4s ease;
 
     pointer-events: none;    /* disable clicks when closed */
 }
+
+
 
 /* Open state */
 .mobile-links.open {
@@ -49,35 +53,44 @@
     cursor: pointer;
 }
 
+
+
 /* Animate links individually when menu opens */
 .mobile-links.open .mobile-links-inner a:nth-child(1) { 
     opacity:1; 
     transform: translateX(0); 
-    transition-delay: 0.05s; 
+    transition-delay: 0.15s; 
 }
 .mobile-links.open .mobile-links-inner a:nth-child(2) { 
     opacity:1; 
     transform: translateX(0); 
-    transition-delay: 0.1s; 
+    transition-delay: 0.2s; 
 }
 .mobile-links.open .mobile-links-inner a:nth-child(3) { 
     opacity:1; 
     transform: translateX(0); 
-    transition-delay: 0.15s; 
+    transition-delay: 0.25s; 
 }
 .mobile-links.open .mobile-links-inner a:nth-child(4) { 
     opacity:1; 
     transform: translateX(0); 
-    transition-delay: 0.2s; 
+    transition-delay: 0.3s; 
 }
 .mobile-links.open .mobile-links-inner a:nth-child(5) { 
     opacity:1; 
     transform: translateX(0); 
-    transition-delay: 0.25s; 
+    transition-delay: 0.35s; 
 }
+
+.mobile-links.open .mobile-links-inner a:nth-child(6) { 
+    opacity:1; 
+    transform: translateX(0); 
+    transition-delay: 0.40s; 
+}
+
 
 /* Optional: add hover effect */
 .mobile-links a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
 }

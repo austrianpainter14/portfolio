@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
     <title>Portfolio-Školní rok</title>
     <link rel="stylesheet" href="../../body.css">
     <link rel="stylesheet" href="../../defaults.css">
@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="assets/css/rolling-digits.css">
     <link rel="stylesheet" href="assets/css/text-rocniky.css">
     <link rel="stylesheet" href="assets/css/rocniky-buttons.css">
+    <link rel="stylesheet" href="../../header/css/mobile-menu.css">
+    <link rel="stylesheet" href="../../header/css/header_structure.css">
+    <link rel="stylesheet" href="../../text-color-mobile-menu.css">
     
     
     <!-- Font Awesome -->
@@ -22,13 +25,36 @@
 <body>
     <header class="header">
         <a href="../../index.html">
-            <img src="../../globalassets/home-icon2.png" alt="Home" class="home-icon">
+            <img src="../../globalassets/home-icon3.png" alt="Home" class="home-icon">
         </a>
         <div class="default-name">Školní rok</div>
 
         
 
+    <input type="checkbox" id="menu_checkbox">
+        <label for="menu_checkbox">
+        <div></div>
+        <div></div>
+        <div></div>
+        </label>
+
+
     </header>
+
+    <nav class="mobile-links">
+        <div class="mobile-links-inner">
+            <a href="../../index.html">Home</a>
+            <div class="you-are-here"><a href="../../pages/skolnirok/skolnirok.html">Školní rok</a></div>
+            <a href="../../pages/projekty/projekty.html">Projekty</a>
+            <a href="../../pages/aboutme/aboutme.html">O mně</a>
+            <a href="../../pages/skills/skills.html">Skills</a>
+            <a href="../../pages/kontakt/kontakt.html">Kontakt</a>
+        </div>
+        
+    </nav>
+    <script src="../../header/js/burger.js"></script>
+
+
 
     <div class="percent-text">
         <p id="percent-text"></p>
