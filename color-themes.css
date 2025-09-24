@@ -1,0 +1,20 @@
+[data-theme="light"] {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+    --skolnirok-box-click-background: #1f1f1f;
+    --skolnirok-box-text: white;
+    --skolnirok-box-prvak: #AF3E3E;
+    --skolnirok-box-druhak: #A3DC9A;
+    --skolnirok-box-tretak: #555879;
+    --skolnirok-box-ctvrtak: #F08787;
+    --mobile-links-background-color: rgba(255, 255, 255, 0.1);
+    --burger-menu-backgorund-color-cross: #CC161F;
+    --burger-menu-background-color: #fff;
+    --text-color: wheat;
+    --site-header-box-shadow:  rgba(0,0,0,0.4);
+    --site-header-box-border:  rgba(255, 255, 255, 0.18);
+--text-color: #f5f5f5;
+}

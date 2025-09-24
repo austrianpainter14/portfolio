@@ -1,0 +1,83 @@
+/* ==========================
+   MOBILE MENU SLIDING CSS
+   ========================== */
+/* Container handles sliding, not clickable area */
+.mobile-links {
+    position: fixed;
+    top: 85px;               /* below header */
+    left: 0;                
+    height: calc(100vh - 85px);
+    width: 100%;
+    background: rgba(34,34,34,0.13);
+    backdrop-filter: blur(0);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    /* Start hidden by translating X */
+    transform: translateX(-100%);
+    transition: transform 0.4s ease, backdrop-filter 0.4s ease;
+
+    pointer-events: none;    /* disable clicks when closed */
+}
+
+/* Open state */
+.mobile-links.open {
+    transform: translateX(0);   /* slide in */
+    backdrop-filter: blur(10px);
+    pointer-events: auto;       /* enable clicks */
+}
+
+/* Inner container with clickable links only */
+.mobile-links-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Links */
+.mobile-links a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 40px;
+    padding: 10px 20px;       /* clickable area */
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: pointer;
+}
+
+/* Animate links individually when menu opens */
+.mobile-links.open .mobile-links-inner a:nth-child(1) { 
+    opacity:1; 
+    transform: translateX(0); 
+    transition-delay: 0.05s; 
+}
+.mobile-links.open .mobile-links-inner a:nth-child(2) { 
+    opacity:1; 
+    transform: translateX(0); 
+    transition-delay: 0.1s; 
+}
+.mobile-links.open .mobile-links-inner a:nth-child(3) { 
+    opacity:1; 
+    transform: translateX(0); 
+    transition-delay: 0.15s; 
+}
+.mobile-links.open .mobile-links-inner a:nth-child(4) { 
+    opacity:1; 
+    transform: translateX(0); 
+    transition-delay: 0.2s; 
+}
+.mobile-links.open .mobile-links-inner a:nth-child(5) { 
+    opacity:1; 
+    transform: translateX(0); 
+    transition-delay: 0.25s; 
+}
+
+/* Optional: add hover effect */
+.mobile-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+}
