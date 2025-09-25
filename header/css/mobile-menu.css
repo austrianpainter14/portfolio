@@ -5,9 +5,10 @@
 .mobile-links {
     display: flex;
     position: fixed;
+
     top: 85px;               /* below header */
     left: 0;                
-    height: calc(100vh - 85px);
+    height: calc(100vh + 85px);
     width: 100%;
     background: var(--mobile-links-background);
     backdrop-filter: blur(0);
