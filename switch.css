@@ -20,7 +20,7 @@ input {
 	-webkit-tap-highlight-color: transparent;
 }
 .switch {
-    margin-top: 80px ;
+    margin-top: 0px ;
     left: 30px;
 	position: fixed;
 	-webkit-user-select: none;
