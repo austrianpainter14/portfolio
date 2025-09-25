@@ -20,7 +20,7 @@
     font-family: "Jersey 20", serif;
     font-size: clamp(45px, 0vw, 55px); 
     font-weight: bolder;
-    color: wheat;
+    color: var(--text-color);
 }
 
 .home-icon {
@@ -29,9 +29,9 @@
     top: 50%;             /* vertical center */
     transform: translateY(-50%); /* perfect vertical centering */
     
-    width: 48px;
-    height: 48px;
-    fill: wheat;
+    width: 40px;
+    height: 40px;
+    fill: var(--text-color-logo);
     transition: transform 0.3s ease; /* smooth hover effect */
 }
 

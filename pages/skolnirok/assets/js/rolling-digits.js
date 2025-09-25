@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       div.style.lineHeight = digitHeight + 'px';
       div.style.textAlign = 'center';
       div.style.fontSize = '48px';
-      div.style.color = 'wheat';
+      div.style.color = "var(--countdown-text-color)";
       roller.appendChild(div);
     }
   }

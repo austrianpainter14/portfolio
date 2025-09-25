@@ -1,26 +1,26 @@
 .timeline-container {
   width: 50%; 
   height: 20px; 
-  background-color: #ee4e4e4b; 
+  background-color: var(--skolnirok-box-timeline); 
   border-radius: 20px; 
   overflow: hidden;
   margin: 20px auto 0 auto;
   outline-width: 3px;
-  outline-color: wheat;
+  outline-color: var(--text-color);
   outline-style: solid;
 }
 
 .timeline-progress {
   height: 100%;
   width: 0%; /* startuje od nuly, animaci řídí JS */
-  background: linear-gradient(90deg, #F6EEC9, #A1DD70, #799351); 
+  background: var(--skolnirok-timeline-progress); 
 }
 
 p {
   font-family: "Jersey 20", serif;
   font-size: 30px;
   font-weight: bolder;
-  color: wheat;
+  color: var(--text-color);
   margin-top: 120px;
   text-align: center;
 }
@@ -30,6 +30,6 @@ p {
   font-family: "Jersey 20", serif;
   font-size: 30px;
   font-weight: bolder;
-  color: wheat;
+  color: var(--text-color);
   margin-top: 0px;
 }

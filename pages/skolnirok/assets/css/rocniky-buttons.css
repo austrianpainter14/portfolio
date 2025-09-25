@@ -12,7 +12,7 @@
 .text-rocniky {
     font-size: 60px;
     font-weight: bold;
-    color: wheat;
+    color: var(--text-color);
     margin-bottom: 10px;
     transition: font-size 0.3s ease; /* smooth resize */
 }
@@ -31,8 +31,8 @@
     font-family: "Jersey 20", sans-serif;
     font-size: 40px;
     font-weight: bolder;
-    color: wheat;
-    background-color: #2a2a2a;
+    color: var(--text-color);
+    background-color: var(--skolnirok-button);
     border: none;
     border-radius: 16px;
     cursor: pointer;
@@ -49,15 +49,15 @@
 }
 
 /* Barevný hover pro jednotlivé ročníky */
-.prvak:hover { background-color: #AF3E3E; color: white; }
-.druhak:hover { background-color: #A3DC9A; color: white; }
-.tretak:hover { background-color: #555879; color: white; }
-.ctvrtak:hover { background-color: #F08787; color: white; }
+.prvak:hover { background-color: var(--skolnirok-box-prvak); color: var(--skolnirok-box-text); }
+.druhak:hover { background-color: var(--skolnirok-box-druhak); color: var(--skolnirok-box-text); }
+.tretak:hover { background-color: var(--skolnirok-box-tretak); color: var(--skolnirok-box-text); }
+.ctvrtak:hover { background-color: var(--skolnirok-box-ctvrtak); color: var(--skolnirok-box-text); }
 
 /* Kliknutí – tmavší barva zpět */
 .rocniky-buttons button:active {
     transform: translateY(0);
-    background-color: #1f1f1f;
+    background-color: var(--skolnirok-button-click-background);
 }
 
 

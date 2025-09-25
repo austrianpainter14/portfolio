@@ -9,7 +9,7 @@
     left: 0;                
     height: calc(100vh - 85px);
     width: 100%;
-    background: rgba(0, 0, 0, 0.219);
+    background: var(--mobile-links-background);
     backdrop-filter: blur(0);
     z-index: 1000;
     
@@ -44,7 +44,7 @@
 /* Links */
 .mobile-links a {
     text-decoration: none;
-    color: wheat;
+    color: var(--text-color);
     font-size: 40px;
     padding: 10px 20px;       /* clickable area */
     opacity: 0;
@@ -88,9 +88,15 @@
     transition-delay: 0.4s; 
 }
 
+.switch.open a:nth-child(7) { 
+    opacity:1; 
+    transform: translateX(0); 
+    transition-delay: 0.4s; 
+}
+
 
 /* Optional: add hover effect */
 .mobile-links a:hover {
-    background: rgba(0, 0, 0, 0.24);
+    background: var(--mobile-links-hover);
     border-radius: 20px;
 }
