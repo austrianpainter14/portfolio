@@ -10,13 +10,6 @@
     text-align: center;
     align-items: center;
     justify-content: center; /* centers the text */
-
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px) saturate(160%);
-    -webkit-backdrop-filter: blur(10px) saturate(160%);
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-
     font-family: "Jersey 20", serif;
     font-size: clamp(45px, 0vw, 55px); 
     font-weight: bolder;
@@ -24,6 +17,7 @@
 }
 
 .home-icon {
+    
     position: absolute;
     left: 20px;           /* left side of header */
     top: 50%;             /* vertical center */
@@ -33,6 +27,7 @@
     height: 40px;
     fill: var(--text-color-logo);
     transition: transform 0.3s ease; /* smooth hover effect */
+    z-index: 10000;
 }
 
 .home-icon:hover {
@@ -41,4 +36,15 @@
 
 .default-name {
     text-align: center;
+    z-index: 10000;
 }
+
+.home-icon {
+  width: 28px;
+  height: 28px;
+  background-image: url('../../globalassets/home-icon-dark.png');
+  background-size: cover;
+}
+
+/* Dark theme */
+

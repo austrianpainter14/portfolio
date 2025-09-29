@@ -1,0 +1,50 @@
+#menu_checkbox {
+  display: none;
+
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* 20px from right */
+  transform: translateY(-50%);
+  width: 30px;  /* smaller hamburger */
+  height: 20px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+   
+}
+
+
+label div {
+  height: 4px;           /* thin lines */
+  width: 100%;
+  background-color: var(--burger-menu-background-color);
+  border-radius: 2px;
+  transform-origin: center;                    /* center rotation */
+  transition: transform 1s cubic-bezier(.22,.9,.18,1),
+  opacity 0.25s ease;
+  will-change: transform, opacity;
+  z-index: 8000;
+  
+
+}
+
+/* checked -> form a centered X */
+#menu_checkbox:checked + label div:nth-child(1) {
+  transform: translateY(8px) rotate(315deg);   /* move down then rotate */
+  background-color: var(--burger-menu-background-color-cross);
+}
+
+#menu_checkbox:checked + label div:nth-child(2) {
+  transform: translateX(60px) rotate(0deg); /* move up then rotate */
+
+  background-color: var(--burger-menu-background-color-cross);
+}
+
+#menu_checkbox:checked + label div:nth-child(3) {
+  transform: translateY(-8px) rotate(-135deg); /* move up then rotate */
+  background-color: var(--burger-menu-background-color-cross);
+}

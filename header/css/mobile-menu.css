@@ -1,103 +1,131 @@
-/* ==========================
-   MOBILE MENU SLIDING CSS
-   ========================== */
-/* Container handles sliding, not clickable area */
 .mobile-links {
     display: flex;
     position: fixed;
-
-    top: 85px;               /* below header */
-    left: 0;                
-    height: calc(100vh + 85px);
+    top: 0px;
+    left: 0;
+    height: 100vh;
     width: 100%;
-    background: var(--mobile-links-background);
-    backdrop-filter: blur(0);
-    z-index: 1000;
-    
+
+    /* Frosted glass: semi-transparent so backdrop-filter can blur behind it */
+    background-color: rgba(0, 0, 0, 0.253);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* Safari */
+
     justify-content: flex-start;
-    align-items: flex-start;
-
-    /* Start hidden by translating X */
-
+    align-items: stretch;
     transform: translateX(-120%);
     transition: transform 0.4s ease, backdrop-filter 0.4s ease;
+    pointer-events: none;
+    z-index: 2000;
 
-    pointer-events: none;    /* disable clicks when closed */
 }
 
-
-
-/* Open state */
 .mobile-links.open {
-    transform: translateX(0);   /* slide in */
-    backdrop-filter: blur(10px);
-    pointer-events: auto;       /* enable clicks */
+    transform: translateX(0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    pointer-events: auto;
 }
 
-/* Inner container with clickable links only */
+
 .mobile-links-inner {
+
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding-top: 100px;
+    padding-left: 20px;
+
+    justify-content: flex-start; /* links at top */
 }
 
-/* Links */
 .mobile-links a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 40px;
-    padding: 10px 20px;       /* clickable area */
+    padding: 10px 20px;
     opacity: 0;
     transform: translateX(-20px);
     transition: transform 0.4s ease, opacity 0.4s ease;
     cursor: pointer;
+    font-family: "Jersey 20", sans-serif;
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+
+.theme-btn {
+    position: fixed;
+    bottom: 20px;
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0.13);
+
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color: var(--text-color);
+    font-family: "Jersey 20", sans-serif;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: pointer;
+    z-index: 1000;
+    left: 20px;
+    opacity: 0;
+    transform: translateX(-20px);
+    
+}
+
+.theme-btn.open {
+    pointer-events: auto;
 }
 
 
 
-/* Animate links individually when menu opens */
-.mobile-links.open .mobile-links-inner a:nth-child(1) { 
-    opacity:1; 
-    transform: translateX(0); 
-    transition-delay: 0.15s; 
-}
-.mobile-links.open .mobile-links-inner a:nth-child(2) { 
-    opacity:1; 
-    transform: translateX(0); 
-    transition-delay: 0.2s; 
-}
-.mobile-links.open .mobile-links-inner a:nth-child(3) { 
-    opacity:1; 
-    transform: translateX(0); 
-    transition-delay: 0.25s; 
-}
-.mobile-links.open .mobile-links-inner a:nth-child(4) { 
-    opacity:1; 
-    transform: translateX(0); 
-    transition-delay: 0.3s; 
-}
-.mobile-links.open .mobile-links-inner a:nth-child(5) { 
-    opacity:1; 
-    transform: translateX(0); 
-    transition-delay: 0.35s; 
-}
-
-.mobile-links.open .mobile-links-inner a:nth-child(6) { 
-    opacity:1; 
-    transform: translateX(0); 
-    transition-delay: 0.4s; 
-}
-
-.switch.open a:nth-child(7) { 
-    opacity:1; 
-    transform: translateX(0); 
-    transition-delay: 0.4s; 
-}
-
-
-/* Optional: add hover effect */
+/* Hover effect */
 .mobile-links a:hover {
     background: var(--mobile-links-hover);
     border-radius: 20px;
 }
+
+/* Animate links individually including theme button */
+.mobile-links.open .mobile-links-inner > *:nth-child(1) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.15s;
+}
+
+.mobile-links.open .mobile-links-inner > *:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.2s;
+}
+
+.mobile-links.open .mobile-links-inner > *:nth-child(3) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.25s;
+}
+
+.mobile-links.open .mobile-links-inner > *:nth-child(4) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+.mobile-links.open .mobile-links-inner > *:nth-child(5) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.35s;
+}
+
+.mobile-links.open .mobile-links-inner > *:nth-child(6) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.4s;
+}
+
+.mobile-links.open .mobile-links-inner > *:nth-child(7) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.5s; /* button animates after links */
+}
+

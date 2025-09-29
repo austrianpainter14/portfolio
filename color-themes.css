@@ -1,6 +1,6 @@
 
 [data-theme="dark"] {
-  background: url("./header/assets/images/black.jpg") center center;
+  background: #080808;
   --text-color: wheat;
   --countdown-text-color: wheat;
   --site-header-box-border:  #000000;
@@ -17,7 +17,7 @@
   --burger-menu-background-color: #fff;
   --site-header-background: #ffffff14;
   --site-header-box-shadow:  #00000066;
-  --site-header-box-border:  #ffffff2e;
+
   --mobile-links-hover:   #0000003d;
   --mobile-links-background:  #00000038;
   --skolnirok-button: #2a2a2a;
@@ -28,7 +28,7 @@
 
 
 [data-theme="white"] {
-    background: url("./header/assets/images/white.jpg") center center;
+    background: url("./globalassets/background/white.jpg") center center;
   --text-color: rgb(22, 25, 26);
   --countdown-text-color: rgb(0, 0, 0);
   --site-header-box-border:  #000000;
@@ -56,7 +56,7 @@
 
 
 [data-theme="blue"] {
-
+  background: #0d0f79;
   --countdown-text-color: #90e0efff;
   --text-color: rgb(89, 134, 151);
   --site-header-box-border:  #ffffff2e;
@@ -78,6 +78,24 @@
   --skolnirok-button: #2a2a2a;
 
 }
+
+
+
+body[data-theme="dark"] .home-icon {
+  background-image: url('../../globalassets/home-icon-white.png');
+}
+
+/* Light theme */
+body[data-theme="light"] .home-icon {
+  background-image: url('../../globalassets/home-icon-dark.png');
+}
+
+
+
+
+
+
+
 
 
 

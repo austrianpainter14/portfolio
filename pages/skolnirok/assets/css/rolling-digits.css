@@ -5,6 +5,8 @@
     margin-top: 30px;
     font-family: "Jersey 20", sans-serif;
     gap: 12px;
+    position: relative; 
+    z-index: 100; /* lower than mobile menu */
 }
 
 .digit-column {
@@ -16,15 +18,21 @@
     justify-content: center; /* horizontálně centrované */
     align-items: flex-start; /* pro roll efekt */
     background-color: transparent; /* žádné rámečky */
+    position: relative;
+
 }
 
 #days {
     width: 90px; /* širší pro dny */
+
 }
 
 .roller {
+
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 100; /* all lower than mobile menu */
 }
 
 .roller div {
@@ -35,6 +43,8 @@
     font-weight: 600;
     color: var(--text-color); /* nová barva textu */
     transition: transform 0.5s ease-in-out;
+    position: relative;
+    z-index: 100; /* all lower than mobile menu */
 
 }
 
@@ -48,5 +58,7 @@
     line-height: 70px;            /* musí odpovídat výšce digit sloupce */
     color: var(--text-color);
     padding-bottom: 5px;
+    position: relative;
+    z-index: 100; /* all lower than mobile menu */
 }
 

@@ -1,0 +1,54 @@
+@media (max-width: 800px) {
+    .left-side, .right-side {
+        display: none;
+    }
+
+    .site-name {
+        flex: 1;
+        text-align: center;
+        /* leave exact space for logo + hamburger */
+        max-width: calc(100% - (28px + 20px) + (30px + 20px)); 
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .infis-logo-header {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    label { 
+        display: flex;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1001; /* make sure it’s clickable */
+
+    }
+}
+
+@media (max-width: 250px) {
+    .infis-logo-header{
+        display: none;
+    }
+    
+    
+    label{
+        display: none;
+    }
+}
+
+@media (max-width: 150px) {
+    .site-name{
+        display: none;
+    }
+}

@@ -8,8 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const digitHeight = 60;
 
+  // Function to create digits and force low z-index
   const createDigits = (roller, max) => {
     roller.innerHTML = '';
+    roller.style.position = "relative";  // required for z-index
+    roller.style.zIndex = -1;             // ensure countdown stays under menu
     for (let i = 0; i <= max; i++) {
       const div = document.createElement('div');
       div.textContent = i;
@@ -18,10 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
       div.style.textAlign = 'center';
       div.style.fontSize = '48px';
       div.style.color = "var(--countdown-text-color)";
+      div.style.position = "relative";
+      div.style.zIndex = -1;              // each number also stays under menu
       roller.appendChild(div);
     }
   }
 
+  // Create digits
   createDigits(secondsCol, 59);
   createDigits(minutesCol, 59);
   createDigits(hoursCol, 23);
@@ -37,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const hours = Math.floor(totalSeconds / 3600) % 24;
     const days = Math.floor(totalSeconds / 86400);
 
-    // jen když se změní hodnota
     if (seconds !== lastValues.seconds) {
       secondsCol.style.transition = "transform 0.5s ease-in-out";
       secondsCol.style.transform = `translateY(-${seconds * digitHeight}px)`;
@@ -62,6 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
       lastValues.days = days;
     }
   }
+
+  // Set all countdown elements to low z-index
+  const allCountdownElements = document.querySelectorAll(".countdown-container, .digit-column, .roller, .roller div, .colon");
+  allCountdownElements.forEach(el => {
+    el.style.position = "relative";
+    el.style.zIndex = 1;
+  });
 
   updateCountdown();
   setInterval(updateCountdown, 1000);
