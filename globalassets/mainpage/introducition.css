@@ -1,0 +1,72 @@
+.introduction {
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+    opacity: 1; /* start fully visible for JS */
+    transform: translateY(0);
+    transition: opacity 0.2s ease, transform 0.2s ease; /* smooth fade/move */
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between logo and info */
+}
+
+.logo-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* makes it a circle */
+    background-color: var(--infis-logo-background-introduction); /* circle color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* prevent shrinking */
+    transition: transform 0.4s ease, background-color 0.4s ease; /* smooth hover */
+}
+
+.logo-circle img {
+    width: 60%;  /* logo size inside circle */
+    height: auto;
+    transition: transform 0.4s ease; /* smooth scaling */
+}
+
+/* hover effect on logo */
+.logo-circle:hover {
+    transform: scale(1.1); /* slight pop */
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: color 0.3s ease, transform 0.3s ease; /* smooth text effects */
+}
+
+.my-name:hover {
+    transform: translateY(-3px);
+}
+
+.small-info {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.small-info:hover {
+    color: #aaa; /* subtle hover effect */
+}

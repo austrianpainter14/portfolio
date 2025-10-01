@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
     <title>Portfolio - Jan Přinda</title>
-    <link rel="stylesheet" href="color-themes.css">    
-    <link rel="stylesheet" href="header/css/imports.css">
-    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="globalimports.css">
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="globalassets/infis-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,16 +56,37 @@
             <a href="pages/aboutme/aboutme.html">O mně</a>
             <a href="pages/skills/skills.html">Skills</a>
             <a href="pages/kontakt/kontakt.html">Kontakt</a>
-            <button class="theme-btn" id="themeToggle">Change Theme</button>
+            <button id="themeToggle1" class="theme-btn themeToggle"></button>
         </div>
     
     </nav>
     </header>
 
-    <!-- Mobile sliding links -->
+    <div class="introduction">
+        <div class="profile">
+            <a href="https://www.infis.cz">
+            <div class="logo-circle">
+                <img src="globalassets/infis-logo.png" alt="INFIS Logo">
+            </div>
+            </a>
+            <div class="info">
+                <a href="pages/aboutme/aboutme.html">
+                <div class="my-name">Jan Přinda</div>
+                </a>
+                <div class="small-info">Student SŠ INFIS</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="globalassets/mainpage/fadeout.js"></script>
+
     
 
-
+    <footer>
+        <div class="footer">
+            <button id="themeToggle2" class="footer-theme-btn themeToggle"></button>
+        </div>
+    </footer>
     
 <script src="./header/js/theme.js"></script>
 <script src="./header/js/burger.js"></script>

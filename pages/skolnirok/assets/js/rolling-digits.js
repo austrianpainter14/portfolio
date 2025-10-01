@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       div.style.height = digitHeight + 'px';
       div.style.lineHeight = digitHeight + 'px';
       div.style.textAlign = 'center';
-      div.style.fontSize = '48px';
+      div.style.fontSize = '38px';
       div.style.color = "var(--countdown-text-color)";
       div.style.position = "relative";
       div.style.zIndex = -1;              // each number also stays under menu
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const allCountdownElements = document.querySelectorAll(".countdown-container, .digit-column, .roller, .roller div, .colon");
   allCountdownElements.forEach(el => {
     el.style.position = "relative";
-    el.style.zIndex = 1;
+    el.style.zIndex = -1;
   });
 
   updateCountdown();

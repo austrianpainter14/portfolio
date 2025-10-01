@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
     <title>Portfolio-Kontakt</title>
-    <link rel="stylesheet" href="../../body.css">
-    <link rel="stylesheet" href="../../defaults.css">
-    <link rel="stylesheet" href="../../header/css/imports.css">
-    <link rel="stylesheet" href="../../color-themes.css">
-
+    <link rel="stylesheet" href="../../globalimports.css">
 
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../../globalassets/infis-logo.png">
-    <link rel="stylesheet" href="../../globalassets/home-icon.png">
 
 </head>
 <body data-theme="dark">
     <header class="header">
     <a href="../../index.html">
-        <img src="../../globalassets/home-icon.png" alt="Home" class="home-icon">
+        <div class="home-icon"></div>
     </a>
     <div class="default-name">Kontakt</div>
-    <input type="checkbox" id="menu_checkbox">
+        <div class="burger">
+        <input type="checkbox" id="menu_checkbox">
         <label for="menu_checkbox">
         <div></div>
         <div></div>
         <div></div>
         </label>
+    </div>
 
 
     <nav class="mobile-links">
@@ -41,10 +39,17 @@
             <a href="../../pages/aboutme/aboutme.html">O mně</a>
             <a href="../../pages/skills/skills.html">Skills</a>
             <a href="../../pages/kontakt/kontakt.html">Kontakt</a>
-            <button class="theme-btn" id="themeToggle">Change Theme</button>
+            <button id="themeToggle1" class="theme-btn themeToggle"></button>
         </div>
     </nav>
     </header>
+
+
+    <footer>
+        <div class="footer">
+            <button id="themeToggle2" class="footer-theme-btn themeToggle"></button>
+        </div>
+    </footer>
 
     
 <script src="../../header/js/theme.js"></script>

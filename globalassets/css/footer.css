@@ -1,0 +1,72 @@
+.footer {
+  position: fixed;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  display: flex; /* enable flexbox */
+  justify-content: flex-end; /* push content to right */
+
+}
+
+
+
+
+
+
+
+.footer-theme-btn {
+    position: flex;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.13);
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: none;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease;
+
+    
+}
+
+.footer-theme-btn:hover {
+  transform: scale(1.01); /* grow + tilt */
+  background: rgba(0, 0, 0, 0.25);   /* slightly darker on hover */
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .footer{
+        display: none;
+    }
+}
+
+
+.footer {
+  opacity: 0;
+  animation: fadeInFooter 0.3s forwards ease-in-out 0.15s; /* delay optional */
+}
+
+@keyframes fadeInFooter {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.introduction {
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+

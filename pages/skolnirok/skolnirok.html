@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
     <title>Portfolio-Školní Rok</title>
-    <link rel="stylesheet" href="../../body.css">
-    <link rel="stylesheet" href="../../defaults.css">
-    <link rel="stylesheet" href="../../color-themes.css">
-    <link rel="stylesheet" href="../../header/css/imports.css">
+    <link rel="stylesheet" href="../../globalimports.css">
 
     <link rel="stylesheet" href="assets/css/rolling-digits.css">
     <link rel="stylesheet" href="assets/css/text-rocniky.css">
@@ -17,7 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../../globalassets/infis-logo.png">
     <link rel="stylesheet" href="../../globalassets/home-icon.png">
 
@@ -47,56 +44,66 @@
             <a href="../../pages/aboutme/aboutme.html">O mně</a>
             <a href="../../pages/skills/skills.html">Skills</a>
             <a href="../../pages/kontakt/kontakt.html">Kontakt</a>
-            <button class="theme-btn" id="themeToggle">Change Theme</button>
+            <button id="themeToggle1" class="theme-btn themeToggle"></button>
         </div>
     </nav>
     </header>
-    <script src="../../header/js/theme.js"></script>
+    
     <script src="../../header/js/burger.js"></script>
 
 
+    <div class="skolnirok-content">
+      <div class="percent-text">
+          <p id="percent-text"></p>
+      </div>
 
-    <div class="percent-text">
-        <p id="percent-text"></p>
-    </div>
 
+      <div class="timeline-container">
+          <div class="timeline-progress"></div>
+      </div>
 
-    <div class="timeline-container">
-        <div class="timeline-progress"></div>
-    </div>
+      
 
-    
+    <!-- Rolling digits countdown -->
+    <div class="countdown-container">
+      <div class="digit-column" id="days">
+        <div class="roller"></div>
+      </div>
+      <div class="colon">:</div>
+      <div class="digit-column" id="hours">
+        <div class="roller"></div>
+      </div>
+      <div class="colon">:</div>
+      <div class="digit-column" id="minutes">
+        <div class="roller"></div>
+      </div>
+      <div class="colon">:</div>
+      <div class="digit-column" id="seconds">
+        <div class="roller"></div>
+      </div>
+    </div>
+      <div class="count-subtitle">Konec školního roku</div>
 
-  <!-- Rolling digits countdown -->
-  <div class="countdown-container">
-    <div class="digit-column" id="days">
-      <div class="roller"></div>
-    </div>
-    <div class="colon">:</div>
-    <div class="digit-column" id="hours">
-      <div class="roller"></div>
-    </div>
-    <div class="colon">:</div>
-    <div class="digit-column" id="minutes">
-      <div class="roller"></div>
-    </div>
-    <div class="colon">:</div>
-    <div class="digit-column" id="seconds">
-      <div class="roller"></div>
+    <div class="rocniky">
+      <div class="text-rocniky">Ročníky</div>
+      <div class="rocniky-buttons">
+          <button class="prvak">Prvák</button>
+          <button class="druhak">Druhák</button>
+          <button class="tretak">Třeťák</button>
+          <button class="ctvrtak">Čtvrťák</button>
+      </div>
     </div>
   </div>
-    <div class="count-subtitle">Konec školního roku</div>
 
-  <div class="rocniky">
-    <div class="text-rocniky">Ročníky</div>
-    <div class="rocniky-buttons">
-        <button class="prvak">Prvák</button>
-        <button class="druhak">Druhák</button>
-        <button class="tretak">Třeťák</button>
-        <button class="ctvrtak">Čtvrťák</button>
-    </div>
-  </div>
-    
+
+  <footer>
+        <div class="footer">
+            <button id="themeToggle2" class="footer-theme-btn themeToggle"></button>
+        </div>
+  </footer>
+  
+
+<script src="../../header/js/theme.js"></script>
 <script src="assets/js/timeline.js" defer></script>
 <script src="./assets/js/rolling-digits.js" defer></script>
 </body>

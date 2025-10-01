@@ -1,0 +1,69 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 0px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center; /* centers the text */
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(35px, 0vw, 45px); 
+    font-weight: bolder;
+    color: var(--text-color);
+}
+
+
+
+
+
+
+.home-icon {
+  position: absolute;
+  left: 60px;                  /* horizontal center */
+  top: 50%;                   /* vertical center */
+  transform: translate(-50%, -50%); /* perfect centering */
+  width: 40px;
+  height: 40px;
+  
+  background-color: var(--text-color-logo, #fff);
+  -webkit-mask-image: var(--home-icon);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: var(--home-icon);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.home-icon:hover {
+  transform: translate(-50%, -50%) translateX(-10px) scale(1.15); /* keep transform consistent */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.default-name {
+    text-align: center;
+    z-index: 10000;
+}
+
+
+/* Dark theme */
+

@@ -5,7 +5,8 @@
     align-items: center;
     gap: 15px;
     margin-top: 40px;
-    font-family: "Jersey 20", sans-serif;
+    font-family: "Poppins", sans-serif;
+
 }
 
 /* Nadpis */
@@ -23,12 +24,13 @@
     flex-wrap: wrap;   /* 👈 umožní 2x2 layout na mobilech */
     gap: 10px;
     justify-content: center;
+    padding: 10px;
 }
 
 /* Základní styl tlačítek */
 .rocniky-buttons button {
     padding: 10px 40px;
-    font-family: "Jersey 20", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 40px;
     font-weight: bolder;
     color: var(--text-color);
@@ -108,4 +110,9 @@ button, a {
         font-size: 46px;
         padding: 14px 50px;
     }
+}
+
+
+.skolnirok-content{
+    overflow: hidden;
 }
