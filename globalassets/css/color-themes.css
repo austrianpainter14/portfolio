@@ -4,7 +4,7 @@
     background: url("../background/black4.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: absolute;
 
   --text-color-logo: white;
   --text-color: white;
