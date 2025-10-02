@@ -38,7 +38,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
 
   
   --text-color: rgb(22, 25, 26);
@@ -64,6 +63,7 @@
 }
 
 [data-theme="blue"] {
+    background: #023e8aff;
     background: url("../background/blue.jpg");
     background-repeat: no-repeat;
     background-position: center center;
