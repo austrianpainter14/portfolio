@@ -37,8 +37,7 @@
     background: url("../background/white.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: absolute;
 
   
   --text-color: rgb(22, 25, 26);
@@ -67,7 +66,7 @@
     background: url("../background/blue.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: absolute;
 
     
   --home-icon: url("../../globalassets/home-icon-white.png");
@@ -96,7 +95,7 @@
 
 
 [data-theme="ocean-sunset"] {
-    
+
   --home-icon: url("../../globalassets/home-icon-white.png");
   --countdown-text-color: rgb(126, 150, 194);
   --text-color: rgb(255, 255, 255);
