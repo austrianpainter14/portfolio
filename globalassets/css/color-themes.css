@@ -129,6 +129,11 @@
     );
   }
 
+  [data-theme="ocean-sunset"] .theme-btn{
+    font-size: 28px;
+  }
+
+
 
 
 
