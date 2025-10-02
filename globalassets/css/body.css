@@ -8,6 +8,7 @@ body {
     font-weight: 600;
     -webkit-tap-highlight-color: transparent;
     background-color: rgb(0, 0, 0);
+    background-attachment: fixed;
     
 }
 
