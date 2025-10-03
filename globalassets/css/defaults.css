@@ -28,6 +28,7 @@
   transform: translate(-50%, -50%); /* perfect centering */
   width: 40px;
   height: 40px;
+  z-index: 10000;
   
   background-color: var(--text-color-logo, #fff);
   -webkit-mask-image: var(--home-icon);
