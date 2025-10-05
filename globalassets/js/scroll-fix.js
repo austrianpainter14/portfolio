@@ -1,5 +1,5 @@
 const setBackgroundHeight = () => {
-  const background = document.querySelector('.background');
+  const background = document.querySelector('.body');
   background.style.height = window.innerHeight + 'px';
 };
 
