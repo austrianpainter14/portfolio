@@ -1,8 +1,8 @@
-function setVH() {
-  // vezme skutečnou výšku okna
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
+const setBackgroundHeight = () => {
+  const background = document.querySelector('.background');
+  background.style.height = window.innerHeight + 'px';
+};
 
-setVH(); // zavoláme při startu
-window.addEventListener('resize', setVH); // a při změně velikosti okna
+setBackgroundHeight();
+
+window.addEventListener('resize', setBackgroundHeight);
