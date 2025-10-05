@@ -10,7 +10,6 @@ body {
     background-color: rgb(0, 0, 0);
     background-attachment: fixed;
     background-size: cover;
-    margin-bottom: -200px;
     
 }
 
@@ -24,4 +23,9 @@ a {
 
 .fullscreen {
   height: calc(var(--vh, 1vh) * 100);
+}
+
+html, body {
+  height: 100%;
+  overflow: auto;
 }
