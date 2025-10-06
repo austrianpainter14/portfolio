@@ -162,6 +162,30 @@ body[data-theme="ocean-sunset"] {
 
 
 
+[data-theme="dark"] {
+  --scrollbar-thumb: #333;
+  --scrollbar-thumb-hover: #555;
+}
+
+/* WHITE THEME */
+[data-theme="white"] {
+  --scrollbar-thumb: #b0b0b0;
+  --scrollbar-thumb-hover: #888;
+}
+
+/* BLUE THEME */
+[data-theme="blue"] {
+  --scrollbar-thumb: #0077b6;
+  --scrollbar-thumb-hover: #00b4d8;
+}
+
+/* OCEAN-SUNSET THEME */
+[data-theme="ocean-sunset"] {
+  --scrollbar-thumb: linear-gradient(180deg, #F56217, #0B486B);
+  --scrollbar-thumb-hover: linear-gradient(180deg, #ff784e, #1a5f85);
+}
+
+
 
 
 
