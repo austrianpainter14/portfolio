@@ -1,5 +1,5 @@
 @media (max-width: 1000px) {
-    .left-side, .right-side {
+    .links {
         display: none;
     }
 

@@ -1,40 +1,17 @@
 .site-header {
+    
     position: fixed;
     top: 0;
     left: 0;
     width:100%;
-    display: flex;
+    display: none;
     justify-content: space-between; 
     align-items: center;
     height: 100px;
     z-index: 3000; /* above mobile-links */
 }
 
-/* Left and right containers */
-.left-side, .right-side {
-    display: flex;
-    gap: clamp(20px, 1vw, 50px); /* smaller max */
-    flex: 1 1 auto;
-    min-width: 0;
-    z-index: 3100;
-}
-
-.right-side {
-    justify-content: flex-end;  
-    margin-right: clamp(5px, 1vw, 30px);
-    padding-top: 5px;
-}
-
-.left-side {
-    
-    justify-content: flex-start;
-    margin-left: clamp(5px, 2vw, 30px);
-    padding-top: 5px;
-}
-
-/* Center site name */
 .site-name {
-    position: relative;
     flex: 0 1 auto;
     font-size: clamp(25px, 5vw, 55px); 
     font-weight: bolder;
@@ -42,11 +19,28 @@
     text-align: center;
     white-space: nowrap;
     z-index: 8000;
+    justify-content: flex-start;
+    margin-left: 20px;
 
 }
 
+
+.links {
+    justify-content: flex-end;
+    margin-right: 30px;
+    display: flex;
+    gap: clamp(20px, 1vw, 50px); /* smaller max */
+    flex: 1 1 auto;
+    min-width: 0;
+    z-index: 3100;
+    padding-top: 5px;
+}
+
+/* Center site name */
+
+
 /* Links */
-.left-side a, .right-side a {
+.links a {
     font-size: clamp(24px, 1.5vw, 40px);
     white-space: nowrap;
     text-decoration: none;
@@ -55,8 +49,7 @@
 
 }
 
-.left-side a:hover,
-.right-side a:hover {
+.links a:hover {
     transform: translateY(-2px);
 }
 

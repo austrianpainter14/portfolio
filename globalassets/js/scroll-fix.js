@@ -6,3 +6,4 @@ const setBackgroundHeight = () => {
 setBackgroundHeight();
 
 window.addEventListener('resize', setBackgroundHeight);
+

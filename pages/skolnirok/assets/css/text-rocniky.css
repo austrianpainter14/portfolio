@@ -5,3 +5,7 @@
     text-align: center;
     padding-top: 110px;
 }
+
+a {
+    color: var(--text-color);
+}
