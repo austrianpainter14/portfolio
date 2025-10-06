@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center center;
 
+
   --text-color-logo: white;
   --text-color: white;
   --countdown-text-color: white;
@@ -64,6 +65,7 @@
     background: url("../background/blue.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
 
     
   --home-icon: url("../../globalassets/home-icon-white.png");
