@@ -4,6 +4,7 @@
     background: url("../background/black4.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 
 
   --text-color-logo: white;
