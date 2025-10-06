@@ -5,7 +5,9 @@ body {
     left: 0;
     padding: 0;
     height: 100dvh;
-    width: 100%;
+    width: 100dvw;
+    overflow: hidden;
+    overflow-y: auto;
     margin: 0px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -27,3 +29,6 @@ a {
   --vh: 100%;
 }
 
+body {
+    -webkit-overflow-scrolling:touch;
+}
