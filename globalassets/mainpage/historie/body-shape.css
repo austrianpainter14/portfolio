@@ -15,7 +15,11 @@
 
 
 .minulost{
+<<<<<<< HEAD
   color: black;
+=======
+  color: red;
+>>>>>>> 6ba9083ca9637ed1285520e0017631d2b30f936e
   display: flex;
   padding-top: 20px;
   margin-left: 20px;
