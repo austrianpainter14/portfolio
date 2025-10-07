@@ -1,6 +1,5 @@
 .historie {
   padding-bottom: 1000px;
-  margin-top: 700px;
   width: 100%;
   background: var(--history-background-color);
   display: flex;
@@ -8,24 +7,13 @@
   align-items: center;
   font-size: 3rem;
   z-index: 100000;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 15%;
 }
 
 
 .minulost{
-<<<<<<< HEAD
   color: black;
-=======
-  color: red;
->>>>>>> 6ba9083ca9637ed1285520e0017631d2b30f936e
   display: flex;
   padding-top: 20px;
   margin-left: 20px;
-
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 70%;
 
 }

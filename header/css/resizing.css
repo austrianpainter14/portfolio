@@ -52,3 +52,51 @@
         display: none;
     }
 }
+
+
+@media (min-width: 1000px) {
+    .links{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .site-name{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .my-name{
+        letter-spacing: -2px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .home-screen-info-site-name{
+        display: none;
+    }
+    
+    .home-screen-info-kontakt-button{
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+    .profile {
+        flex-direction: row; /* Layout side-by-side */
+        align-items: center; /* Align items center along the cross-axis */
+        gap: clamp(1rem, 4vw, 4rem); /* Use your fluid gap */
+    }
+
+    /* Optional: Center the intro content when it's wide */
+    .introduction {
+        justify-content: center;
+        /* Ensure there's enough horizontal padding on the body/main container */
+    }
+}

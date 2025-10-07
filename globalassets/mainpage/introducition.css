@@ -1,27 +1,60 @@
-.logo-jp{
-    width: 60px;      /* or the width of your image */
-    height: 60px;     /* or the height of your image */
-    margin-left: 320px;
-    margin-top: 120px;
-    background: url("../icons/logo-jp-white.png") no-repeat center center;
-    background-size: contain; /* scales image to fit element */
+.main-page{
+    height: 100%;
+}
+
+
+.home-screen-info {
+    position: relative;
+    top: 0;           /* CHANGE 2: Fix it to the very top */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 10000;
+    padding-top: 2%;
+}
+
+
+.home-screen-info-site-name a {
+    margin-top: 0;
+    margin-left: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: var(--text-color);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.home-screen-info-site-name a:hover {
+    color: var(--accent-color, #aaa);
+}
+
+/* Right side — Kontakt */
+.home-screen-info-kontakt-button a{
+    margin-right: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.home-screen-info-kontakt-button a:hover {
+    color: var(--accent-color, #aaa);
 }
 
 
 
 
 
-
-
-
-
 .introduction {
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    opacity: 1; /* start fully visible for JS */
+    opacity: 1; 
     transform: translateY(0);
-    transition: opacity 0.2s ease, transform 0.2s ease; /* smooth fade/move */
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 
@@ -33,34 +66,32 @@
 }
 
 .profile {
+    margin-top: 0%;
     display: flex;
-    align-items: center;
-    gap: 20px; /* space between logo and info */
+    top: 0px; 
 }
 
 .logo-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* makes it a circle */
-    background-color: var(--infis-logo-background-introduction); /* circle color */
+    width: clamp(8rem, 15vw, 20rem);
+    height: clamp(8rem, 15vw, 20rem);
+    border-radius: 50%;
+    background-color: var(--infis-logo-background-introduction);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0; /* prevent shrinking */
-    transition: transform 0.4s ease, background-color 0.4s ease; /* smooth hover */
+    flex-shrink: 0;
+    transition: transform 0.4s ease, background-color 0.4s ease;
 }
 
 .logo-circle img {
-    width: 60%;  /* logo size inside circle */
+    width: clamp(40%, 8vw, 60%);
     height: auto;
-    transition: transform 0.4s ease; /* smooth scaling */
+    transition: transform 0.4s ease;
 }
 
-/* hover effect on logo */
 .logo-circle:hover {
-    transform: scale(1.1); /* slight pop */
+    transform: scale(1.1);
 }
-
 
 .info {
     display: flex;
@@ -68,22 +99,32 @@
 }
 
 .my-name {
-    font-size: 2rem;
+    display: inline-block;
+    font-size: clamp(2rem, 5vw, 8rem);
     font-weight: bold;
     color: var(--text-color);
-    transition: color 0.3s ease, transform 0.3s ease; /* smooth text effects */
+    transition: color 0.3s ease, letter-spacing 0.5s ease, color 0.3s ease;
+    letter-spacing: -4px;
 }
 
 .my-name:hover {
-    transform: translateY(-3px);
+     color: var(--accent-color, #aaa);
+     letter-spacing: -2px;
+
 }
 
+.my-name span {
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+
 .small-info {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 2.5vw, 3rem);
     color: var(--text-color);
     transition: color 0.3s ease;
 }
 
 .small-info:hover {
-    color: #aaa; /* subtle hover effect */
+    color: #aaa;
 }
