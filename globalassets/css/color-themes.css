@@ -39,6 +39,7 @@
     background: url("../background/white.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 
   
   --text-color: rgb(22, 25, 26);
@@ -61,13 +62,14 @@
   --mobile-links-background:  #00000038;
   --skolnirok-button: #9b9b9b;
   --infis-logo-background-introduction: #212a37;
+  --history-background-color: yellowgreen;
 }
 
 [data-theme="blue"] {
     background: url("../background/blue.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-size: cover;
 
     
   --home-icon: url("../../globalassets/home-icon-white.png");
@@ -91,6 +93,7 @@
   --mobile-links-background:  #ffffff;
   --skolnirok-button: #6d74c2;
   --infis-logo-background-introduction: #212a37;
+  --history-background-color: #001219ff;
 
 }
 

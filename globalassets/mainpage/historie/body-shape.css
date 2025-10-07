@@ -7,6 +7,9 @@
   align-items: center;
   font-size: 3rem;
   z-index: 100000;
+  outline-style: solid;
+  outline-width: 10px;
+  outline-offset: 0px;
 }
 
 
