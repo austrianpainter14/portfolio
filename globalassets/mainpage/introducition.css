@@ -29,7 +29,7 @@
 }
 
 .home-screen-info-site-name a:hover {
-    color: var(--accent-color, #aaa);
+    color: var(--links-hover-color);
 }
 
 /* Right side — Kontakt */
@@ -44,7 +44,7 @@
 }
 
 .home-screen-info-kontakt-button a:hover {
-    color: var(--accent-color, #aaa);
+    color: var(--links-hover-color);
 }
 
 
@@ -130,4 +130,42 @@
 
 .small-info:hover {
     color: #aaa;
+}
+
+
+
+
+
+
+
+.home-screen-info-links {
+    box-sizing: content-box;
+    font-weight: 300;
+    font-size: 32px;
+    justify-content: center;
+    display: flex;
+    gap: 8vw;
+    
+}
+
+
+
+.home-screen-info-links a{
+    color: var(--accent-color);
+    width: auto;
+    font-weight: 300;
+    font-size: 32px;
+    margin-top: 8vh;
+    justify-content: center;
+    display: flex;
+    gap: 100px;
+    letter-spacing: -2px;
+    transition: color 0.3s, transform 0.3s ease-in-out, letter-spacing 0.3s, font-weight 0.3s ease-in-out;
+}
+
+.home-screen-info-links a:hover{
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--mainpage-info-links-color);
+    transform: scale(1.1);
 }

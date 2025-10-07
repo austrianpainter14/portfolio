@@ -1,6 +1,5 @@
 /* Only left-side and right-side links */
-.left-side a,
-.right-side a {
+.home-screen-info-links a {
     position: relative;      /* required for ::after */
     color: var(--text-color);
     text-decoration: none;
@@ -9,8 +8,7 @@
 }
 
 /* Underline slides from center */
-.left-side a::after,
-.right-side a::after {
+.home-screen-info-links a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -23,8 +21,7 @@
 }
 
 /* Animate on hover */
-.left-side a:hover::after,
-.right-side a:hover::after {
+.home-screen-info-links a:hover::after {
     width: 100%;              /* full underline */
     left: 50%;
     transform: translateX(-50%); /* keep centered as it grows */

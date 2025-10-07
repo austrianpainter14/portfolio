@@ -7,8 +7,8 @@
     background-size: cover;
 
 
-  --text-color-logo: white;
-  --text-color: white;
+  --text-color-logo: rgb(184, 187, 202);
+  --text-color: rgb(184, 187, 202);
   --countdown-text-color: white;
   --site-header-box-border:  #000000;
   --skolnirok-timeline-progress:  linear-gradient(90deg, #F6EEC9, #A1DD70, #799351);
@@ -28,9 +28,13 @@
   --mobile-links-background:  #00000038;
   --skolnirok-button: #2a2a2a;
   --infis-logo-background-introduction: #212a37;
-  --history-background-color: yellowgreen;
+  --history-background-color: rgb(85, 97, 160);
+  --mainpage-info-links-color: rgb(185, 185, 185);
+  --accent-color: rgb(73, 73, 73);
+  --links-hover-color: #636262;
 
 }
+
 
 
 
@@ -63,6 +67,9 @@
   --skolnirok-button: #9b9b9b;
   --infis-logo-background-introduction: #212a37;
   --history-background-color: yellowgreen;
+  --mainpage-info-links-color: rgb(199, 153, 153);
+  --accent-color: #aaa;
+  --links-hover-color: #F56217;
 }
 
 [data-theme="blue"] {
@@ -94,6 +101,9 @@
   --skolnirok-button: #6d74c2;
   --infis-logo-background-introduction: #212a37;
   --history-background-color: #001219ff;
+  --mainpage-info-links-color: rgb(80, 156, 226);
+  --accent-color: #aaa;
+  --links-hover-color: rgb(125, 158, 228);
 
 }
 
@@ -122,6 +132,9 @@
   --mobile-links-background:  #ffffff;
   --skolnirok-button: rgba(0, 0, 0, 0.096);
   --infis-logo-background-introduction: #212a37;
+  --mainpage-info-links-color: #0B486B;
+  --accent-color: #aaa;
+  --links-hover-color: #F56217;
 
 }
 

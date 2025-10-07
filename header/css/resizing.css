@@ -70,6 +70,9 @@
 }
 
 @media (min-width: 1000px) {
+
+
+
     .my-name{
         letter-spacing: -2px;
     }
@@ -77,6 +80,10 @@
 }
 
 @media (max-width: 1000px) {
+
+    .home-screen-info-links{
+        flex-direction: column;
+    }
     
     .home-screen-info-site-name{
         display: none;
