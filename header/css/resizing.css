@@ -4,6 +4,7 @@
     }
 
     .site-name {
+        pointer-events: none;
         flex: 1;
         text-align: center;
         /* leave exact space for logo + hamburger */
@@ -76,8 +77,10 @@
 }
 
 @media (max-width: 1000px) {
+    
     .home-screen-info-site-name{
         display: none;
+        
     }
     
     .home-screen-info-kontakt-button{

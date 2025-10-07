@@ -21,6 +21,7 @@
 }
 
 .mobile-links.open {
+
     transform: translateX(0);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
