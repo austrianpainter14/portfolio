@@ -89,8 +89,9 @@
 
 @media (min-width: 1000px) {
     .profile {
+        letter-spacing: normal;
+        margin-top: 200px; /* adjust as needed */
         flex-direction: row; /* Layout side-by-side */
-        align-items: center; /* Align items center along the cross-axis */
         gap: clamp(1rem, 4vw, 4rem); /* Use your fluid gap */
     }
 
@@ -99,4 +100,12 @@
         justify-content: center;
         /* Ensure there's enough horizontal padding on the body/main container */
     }
+    
+}
+
+@media (max-width: 1000px) {
+     .profile {
+        letter-spacing: normal;
+     }
+    
 }
