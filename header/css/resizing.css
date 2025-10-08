@@ -56,47 +56,59 @@
 
 
 @media (min-width: 1000px) {
-    .links{
+    .links {
         display: none;
     }
 
-}
-
-@media (min-width: 1000px) {
-    .site-name{
+    .site-name {
         display: none;
     }
-    
-}
 
-@media (min-width: 1000px) {
-
-
-
-    .my-name{
+    .my-name {
         letter-spacing: -2px;
     }
-    
+
+    .profile {
+        letter-spacing: normal;
+        margin-top: 200px; /* adjust as needed */
+        flex-direction: row; /* Layout side-by-side */
+        gap: clamp(1rem, 4vw, 4rem); /* Use your fluid gap */
+    }
+
+    /* Optional: Center the intro content when it's wide */
+    .introduction {
+        justify-content: center;
+        /* Ensure there's enough horizontal padding on the body/main container */
+    }
 }
+
+
+
+
 
 @media (max-width: 1000px) {
 
-    .home-screen-info-links{
+
+    .home-screen-info-links a {
+        margin-top: 20px;
+    }
+
+    .home-screen-info-links {
         flex-direction: column;
     }
-    
-    .home-screen-info-site-name{
-        display: none;
-        
-    }
-    
-    .home-screen-info-kontakt-button{
+
+    .home-screen-info-site-name {
         display: none;
     }
 
+    .home-screen-info-kontakt-button {
+        display: none;
+    }
+
+    .profile {
+        letter-spacing: normal;
+    }
 }
-
-
 @media (min-width: 1000px) {
     .profile {
         letter-spacing: normal;

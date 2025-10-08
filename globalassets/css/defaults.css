@@ -23,7 +23,7 @@
 
 .home-icon {
   position: absolute;
-  left: 60px;                  /* horizontal center */
+  left: 45px;     /* horizontal center */
   top: 50%;                   /* vertical center */
   transform: translate(-50%, -50%); /* perfect centering */
   width: 40px;

@@ -12,3 +12,31 @@ mobileMenu.addEventListener("click", (e) => {
     mobileMenu.classList.remove("open");
   }
 });
+
+
+// Select elements
+const menuCheckbox = document.getElementById('menu_checkbox');
+const mobileLinks = document.querySelector('.mobile-links');
+const html = document.documentElement;
+
+// Listen for checkbox toggle
+menuCheckbox.addEventListener('change', () => {
+    if (menuCheckbox.checked) {
+        // Menu is active
+        mobileLinks.classList.add('open');
+        html.style.overflow = 'hidden'; // Disable scrolling
+    } else {
+        // Menu is inactive
+        mobileLinks.classList.remove('open');
+        html.style.overflow = ''; // Re-enable scrolling
+    }
+});
+
+// (Optional) Close menu when any link is clicked
+document.querySelectorAll('.mobile-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuCheckbox.checked = false;
+        mobileLinks.classList.remove('open');
+        html.style.overflow = '';
+    });
+});
