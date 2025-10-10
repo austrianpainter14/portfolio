@@ -204,6 +204,221 @@ body[data-theme="ocean-sunset"] {
 
 
 
+[data-theme="dark"] .instagram {
+  background-image: url('../icons/instagram-logo-outlined-fat/instagram-dark48.png');
+}
+
+[data-theme="dark"] .github {
+  background-image: url('../icons/github-logo/github-dark48.png'); /* white version */
+}
+
+[data-theme="dark"] .gmail {
+  background-image: url('../icons/gmail-logo-outlined/gmail-dark48.png'); /* white version */
+}
+
+
+
+[data-theme="white"] .instagram {
+  background-image: url('../icons/instagram-logo-outlined-fat/instagram-white48.png');
+}
+
+[data-theme="white"] .github {
+  background-image: url('../icons/github-logo/github-white48.png'); /* white version */
+}
+
+[data-theme="white"] .gmail {
+  background-image: url('../icons/gmail-logo-outlined/gmail-white48.png'); /* white version */
+}
+
+
+
+[data-theme="ocean-sunset"] .instagram {
+  filter: none;
+  background-image: url('../icons/instagram-logo-outlined-fat/instagram-universal48.png');
+}
+
+[data-theme="ocean-sunset"] .github {
+  filter: none;
+  background-image: url('../icons/github-logo/github-universal48.png'); /* white version */
+}
+
+[data-theme="ocean-sunset"] .gmail {
+  filter: none;
+  background-image: url('../icons/gmail-logo-outlined/gmail-universal48.png'); /* white version */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

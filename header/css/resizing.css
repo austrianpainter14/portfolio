@@ -1,4 +1,10 @@
 @media (max-width: 1000px) {
+    .footer{
+        display: none;
+    }
+
+
+
     .links {
         display: none;
     }
@@ -81,6 +87,8 @@
         /* Ensure there's enough horizontal padding on the body/main container */
     }
 }
+
+
 
 
 

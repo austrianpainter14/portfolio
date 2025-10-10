@@ -1,72 +1,151 @@
 .footer {
   position: fixed;
-  padding: 20px;
   left: 0;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
-
-  display: flex; /* enable flexbox */
-  justify-content: flex-end; /* push content to right */
-
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1; /* visible */
+  z-index: 9999;
 }
 
-
-
-
-
-
-
 .footer-theme-btn {
-    position: flex;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.13);
-    padding: 10px;
-    margin-right: 30px;
-    border-radius: 15px;
-    border: none;
-    color: var(--text-color);
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    opacity: 1;
-    transition: all 0.3s ease;
-
-    
+  display: flex;
+  
+  filter: grayscale(20%) brightness(0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* for Safari support */
+  background-color: rgba(255, 255, 255, 0.3); /* optional: translucent background */
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: var(--text-color);
+  border-radius: 50px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.13);
+  padding: 10px;
+  margin-right: 30px;
+  border: none;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .footer-theme-btn:hover {
-  transform: scale(1.01); /* grow + tilt */
-  background: rgba(0, 0, 0, 0.25);   /* slightly darker on hover */
+  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.25);
 }
 
-
-
-
-@media (max-width: 1000px) {
-    .footer{
-        display: none;
-    }
+/* --- socials --- */
+.socials {
+  margin-bottom: 0px;
+  filter: grayscale(20%) brightness(0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* for Safari support */
+  background-color: rgba(255, 255, 255, 0.3); /* optional: translucent background */
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: var(--text-color);
+  border-radius: 50px;
+  background-color: transparent;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 35px;
+  margin-left: 10px;
 }
 
+/* Base social icons */
+.social-icons {
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
+}
 
-.footer {
+/* Colored overlay fade */
+.social-icons::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
-  animation: fadeInFooter 0.3s forwards ease-in-out 0.15s; /* delay optional */
+  transition: opacity 0.35s ease;
 }
 
-@keyframes fadeInFooter {
-  to {
-    opacity: 1;
-  }
+/* Hover: colored image fade */
+.social-icons:hover::after {
+  opacity: 1;
+}
+
+/* Container hover: shrink and gray other icons */
+.socials:hover .social-icons {
+  transform: scale(0.9);
+  filter: grayscale(100%) brightness(0.6);
+  opacity: 0.6;
+}
+
+/* Keep hovered icon bright & glowing */
+.socials:hover .social-icons:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Instagram hover glow */
+.socials:hover .instagram:hover {
+  filter: drop-shadow(0 0 6px rgba(225, 48, 108, 0.7))   /* pink glow */
+          drop-shadow(0 0 10px rgba(255, 180, 0, 0.4))   /* yellow/orange highlights */
+          drop-shadow(0 0 16px rgba(131, 58, 180, 0.3)); /* purple soft outer glow */
+}
+
+/* GitHub hover glow */
+.socials:hover .github:hover {
+  filter: drop-shadow(0 0 8px rgba(119, 11, 146, 0.6))   /* core purple glow */
+          drop-shadow(0 0 16px rgba(119, 11, 146, 0.35)) /* mid purple glow */
+          drop-shadow(0 0 28px rgba(119, 11, 146, 0.2)); /* soft outer purple */
+}
+
+/* Gmail hover glow */
+.socials:hover .gmail:hover {
+  filter: drop-shadow(0 0 8px rgba(219, 68, 55, 0.7))   /* core red glow */
+          drop-shadow(0 0 16px rgba(219, 68, 55, 0.4))  /* mid red glow */
+          drop-shadow(0 0 24px rgba(219, 68, 55, 0.2)); /* soft outer red */
 }
 
 
 
-.introduction {
-    margin-top: 350px;
-    display: flex;
-    justify-content: center;
-    opacity: 1;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+
+
+
+.instagram {
+  background-image: url('../icons/instagram-logo-outlined-fat/instagram-universal48.png');
+  
+}
+.github {
+  background-image: url('../icons/github-logo/github-universal48.png');
+}
+.gmail {
+  background-image: url('../icons/gmail-logo-outlined/gmail-universal48.png');
 }
 
+/* Hover (colored) images via ::after */
+.instagram::after {
+  background-image: url('../icons/instagram-logo-colored/instagram-colored48.png');
+}
+.github::after {
+  background-image: url('../icons/github-logo-colored/github48.png');
+}
+.gmail::after {
+  background-image: url('../icons/gmail-logo-colored/gmail-colored48.png');
+}
