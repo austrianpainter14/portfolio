@@ -13,7 +13,6 @@
 
 .footer-theme-btn {
   display: flex;
-  
   filter: grayscale(20%) brightness(0.8);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px); /* for Safari support */
